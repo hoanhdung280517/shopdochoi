@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'sql106.freesite.vip',
+	'hostname' => 'http://185.27.134.10/',
 	'username' => 'frsiv_26109445',
 	'password' => 'Dung280517',
 	'database' => 'frsiv_26109445_shopdochoi',
