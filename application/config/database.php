@@ -80,7 +80,7 @@ $db['default'] = array(
 	'password' => 'Dung280517',
 	'database' => 'frsiv_26109445_shop',
 	'dbdriver' => 'mysqli',
-	'dbprefix' => 'db_',
+	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,
