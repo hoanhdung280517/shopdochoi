@@ -80,7 +80,7 @@ $db['default'] = array(
 	'password' => 'Dung1234',
 	'database' => 'shopdochoi',
 	'dbdriver' => 'mysqli',
-	'dbprefix' => '',
+	'dbprefix' => 'db_',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,
