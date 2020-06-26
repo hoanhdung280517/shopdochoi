@@ -10,7 +10,7 @@
 								<i class="fa fa-angle-right"></i>
 							</li>
 							<li class="category3">
-								<a href="<?php echo base_url() ?>/san-pham/<?php $link=$this->Mcategory->category_link($row['catid']); echo $link; ?>" title=""><?php $name=$this->Mcategory->category_name($row['catid']); echo $name; ?></a>
+								<a href="san-pham/<?php $link=$this->Mcategory->category_link($row['catid']); echo $link; ?>" title=""><?php $name=$this->Mcategory->category_name($row['catid']); echo $name; ?></a>
 								<i class="fa fa-angle-right"></i>
 							</li>
 							<li class="product"><?php echo $row['name'] ?></li>
