@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-class Phantrang{
+class phantrang{
 	function PageCurrent()
 	{
 		$url= explode('/',uri_string());
