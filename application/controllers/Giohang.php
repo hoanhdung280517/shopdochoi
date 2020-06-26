@@ -17,7 +17,7 @@ class Giohang extends CI_Controller {
     }
     
     public function index(){
-        $this->data['title']='Smart store - Giỏ hàng của bạn';
+        $this->data['title']='Dung Toys - Giỏ hàng của bạn';
         $this->data['view']='index';
         $this->load->view('frontend/layout',$this->data);
     }
