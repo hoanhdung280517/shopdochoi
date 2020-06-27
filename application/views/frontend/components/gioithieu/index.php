@@ -29,8 +29,8 @@
 				    <div><strong>Xem trực tiếp sản phẩm của Dũng Toys tại:</strong></div>
 				    <div>Hóc Môn - Thành Phố Hồ Chí Minh </div>
 				    <div><strong>Thông tin liên hệ:</strong></div>
-				    <div>Hotline: 1900 1208 </div>
-			      <div>Website: https://www.dochoitrecon.vn</div>
+				    <div>Hotline: 089 976 0097</div>
+			        <div>Website: https://www.dochoitrecon.vn</div>
 				    <p style="color: black">&nbsp;</p>
 				    <div class="form-comment">
 			    <div class="row" style="padding-left: 14px;">

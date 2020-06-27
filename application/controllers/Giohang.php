@@ -17,7 +17,7 @@ class Giohang extends CI_Controller {
     }
     
     public function index(){
-        $this->data['title']='Smart store - Giỏ hàng của bạn';
+        $this->data['title']='Dũng Toys - Giỏ hàng của bạn';
         $this->data['view']='index';
         $this->load->view('frontend/layout',$this->data);
     }
@@ -159,7 +159,7 @@ class Giohang extends CI_Controller {
             redirect('/thankyou','refresh');
 
         }else{
-            $this->data['title']='Smart store - Thông tin đơn hàng';
+            $this->data['title']='Dũng Toys - Thông tin đơn hàng';
             $this->data['view']='info-order';
             $this->load->view('frontend/layout',$this->data);
         }
@@ -190,10 +190,10 @@ class Giohang extends CI_Controller {
             $this->email->clear();
             $config['protocol']    = 'smtp';
             $config['smtp_host']    = 'ssl://smtp.gmail.com';
-            $config['smtp_port']    = '465';
+            $config['smtp_port']    = '587';
             $config['smtp_timeout'] = '7';
-            $config['smtp_user']    = 'sale.smart.store.2019@gmail.com';
-            $config['smtp_pass']    = 'cqfmfmrtudhcmahw';
+            $config['smtp_user']    = 'Dunghagcs18594@fpt.edu.vn@gmail.com';
+            $config['smtp_pass']    = 'dung0898478461';
             // mk trên la mat khau dung dung cua gmail, có thể dùng gmail hoac mat khau. Tao mat khau ung dung de bao mat tai khoan
             $config['charset']    = 'utf-8';
             $config['newline']    = "\r\n";
@@ -201,10 +201,10 @@ class Giohang extends CI_Controller {
             $config['mailtype'] = 'html';
             $config['validation'] = TRUE;   
             $this->email->initialize($config);
-            $this->email->from('sale.smart.store.2019@gmail.com', 'Smart Store');
+            $this->email->from('Dunghagcs18594@fpt.edu.vn@gmail.com', 'Dũng Toys');
             $list = array($val['email']);
             $this->email->to($list);
-            $this->email->subject('Hệ thống Smart Store');
+            $this->email->subject('Hệ thống Dũng Toys');
             $body = $this->load->view('frontend/modules/email',$data,TRUE);
             $this->email->message($body); 
             $this->email->send();
@@ -214,7 +214,7 @@ class Giohang extends CI_Controller {
             $this->Mcustomer->customer_update($datax,$idx);
             $this->session->unset_userdata('id-info-customer','money_check_coupon');
         }   
-        $this->data['title']='Smart Store.vn - Kết quả đơn hàng';
+        $this->data['title']='dochoitrecon.vn - Kết quả đơn hàng';
         $this->data['view']='thankyou';
         $this->load->view('frontend/layout',$this->data);
     }

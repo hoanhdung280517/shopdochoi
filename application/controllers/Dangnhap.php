@@ -37,7 +37,7 @@ class Dangnhap extends CI_Controller {
                 $this->load->view('frontend/layout',$this->data);
             }
         }else{
-            $this->data['title']='Smart store - Đăng nhập tài khoản';
+            $this->data['title']='Dũng Toys - Đăng nhập tài khoản';
             $this->data['view']='dangnhap';
             $this->load->view('frontend/layout',$this->data);
         }     
@@ -105,26 +105,26 @@ class Dangnhap extends CI_Controller {
             $this->email->clear();
             $config['protocol']    = 'smtp';
             $config['smtp_host']    = 'ssl://smtp.gmail.com';
-            $config['smtp_port']    = '465';
+            $config['smtp_port']    = '587';
             $config['smtp_timeout'] = '7';
-            $config['smtp_user']    = 'sale.smart.store.2019@gmail.com';
-            $config['smtp_pass']    = 'cqfmfmrtudhcmahw';
+            $config['smtp_user']    = 'Dunghagcs18594@fpt.edu.vn@gmail.com';
+            $config['smtp_pass']    = 'dung0898478461';
             $config['charset']    = 'utf-8';
             $config['newline']    = "\r\n";
             $config['wordwrap'] = TRUE;
             $config['mailtype'] = 'html';
             $config['validation'] = TRUE;   
             $this->email->initialize($config);
-            $this->email->from('sale.smart.store.2019@gmail.com', 'Smart Store');
+            $this->email->from('Dunghagcs18594@fpt.edu.vn@gmail.com', 'Dũng Toys');
             $this->email->to($email);
-            $this->email->subject('Hệ thống Smart Store - Quà thành viên mới');
-            $this->email->message('Bạn đã trở thành thành viên mới của cửa hàng Smart Store, Cửa hàng tặng bạn 1 mã giảm giá giảm 100.000 đ : '.$tempcoupon.' , Mã này có giá trị tới ngày '.$tempdatelimit.'
+            $this->email->subject('Hệ thống Dũng Toys - Quà thành viên mới');
+            $this->email->message('Bạn đã trở thành thành viên mới của cửa hàng Dũng Toys, Cửa hàng tặng bạn 1 mã giảm giá giảm 100.000 đ : '.$tempcoupon.' , Mã này có giá trị tới ngày '.$tempdatelimit.'
                 Hãy sử dụng tài khoản để mua hàng để tích lũy nhận thêm nhiều ưu đãi !!!!');
             $this->email->send();
             $this->data['success']='Đăng ký thành công! Bạn đã nhận được 1 mã giảm giá cho thành viên mới, vui lòng kiểm tra email !!';
 
         }  
-        $this->data['title']='Smart store - Đăng ký tài khoản';   
+        $this->data['title']='Dũng Toys - Đăng ký tài khoản';   
         $this->data['view']='dangky';
         $this->load->view('frontend/layout',$this->data);  
     }
@@ -159,24 +159,24 @@ class Dangnhap extends CI_Controller {
             $this->email->clear();
             $config['protocol']    = 'smtp';
             $config['smtp_host']    = 'ssl://smtp.gmail.com';
-            $config['smtp_port']    = '465';
+            $config['smtp_port']    = '587';
             $config['smtp_timeout'] = '7';
-            $config['smtp_user']    = 'sale.smart.store.2019@gmail.com';
-            $config['smtp_pass']    = 'cqfmfmrtudhcmahw';
+            $config['smtp_user']    = 'Dunghagcs18594@fpt.edu.vn@gmail.com';
+            $config['smtp_pass']    = 'dung0898478461';
             $config['charset']    = 'utf-8';
             $config['newline']    = "\r\n";
             $config['wordwrap'] = TRUE;
             $config['mailtype'] = 'html';
             $config['validation'] = TRUE;   
             $this->email->initialize($config);
-            $this->email->from('sale.smart.store.2019@gmail.com', 'Smart Store');
+            $this->email->from('Dunghagcs18594@fpt.edu.vn@gmail.com', 'Dũng Toys');
             $this->email->to($list['email']);
-            $this->email->subject('Hệ thống Smart Store - Lấy lại mật khẩu');
+            $this->email->subject('Hệ thống Dũng Toys - Lấy lại mật khẩu');
             $this->email->message('Vui lòng truy cập đường dẫn để lấy lại mật khẩu <button class="btn"><a href="'.base_url().'dangnhap/reset_password_new/'.$list['id'].'">Lấy lại mật khẩu</a></button>'); 
             $this->email->send();
             $this->data['success']='Bạn vui lòng kiểm tra mail để lấy lại mật khẩu!';   
         }  
-        $this->data['title']='Smart store - Quên mật khẩu';   
+        $this->data['title']='Dũng Toys - Quên mật khẩu';   
         $this->data['view']='forget_password';
         $this->load->view('frontend/layout',$this->data);  
     }
@@ -214,13 +214,13 @@ class Dangnhap extends CI_Controller {
            }
            else{
             $this->data['error']='Email không đúng, vui lòng nhập đúng email cần lấy lại mật khẩu !';
-            $this->data['title']='Smart Store - Cập nhật mật khẩu mới';
+            $this->data['title']='Dũng Toys - Cập nhật mật khẩu mới';
             $this->data['view']='reset_password_new';
             $this->load->view('frontend/layout',$this->data);
         }
 
     }
-    $this->data['title']='Smart Store - Cập nhật mật khẩu mới';
+    $this->data['title']='Dũng Toys - Cập nhật mật khẩu mới';
     $this->data['view']='reset_password_new';
     $this->load->view('frontend/layout',$this->data);
 }
