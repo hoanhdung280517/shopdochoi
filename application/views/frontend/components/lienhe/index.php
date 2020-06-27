@@ -1,4 +1,5 @@
-<?php echo form_open( base_url()."lien-he"); ?><style type="text/css">
+<?php echo form_open("lien-he"); ?>
+<style type="text/css">
 <!--
 .style1 {color: black}
 -->
