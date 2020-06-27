@@ -236,7 +236,7 @@
                                     Miễn phí giao hàng
                                 </span>
                                 <span class="small-text">
-                                    Cho hóa đơn từ 300,000 đ
+                                    Cho hóa đơn từ 1,000,000 đ
                                 </span>
                             </div>
                         </div>
