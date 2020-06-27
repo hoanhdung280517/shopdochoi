@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-class Alias
+class alias
 {
 	public function str_alias($alias)
     {
