@@ -28,17 +28,20 @@
 								<div class="form-group">
 									<label>Mô tả ngắn</label>
 									<textarea name="introtext" class="form-control" ></textarea>
+									<div class="error" id="password_error"><?php echo form_error('introtext')?></div>	
 								</div>
 								<div class="form-group">
 									<label>Chi tiết bài viết</label>
 									<textarea name="fulltext" id="fulltext" class="form-control" ></textarea>
       								<script>CKEDITOR.replace('fulltext');</script>
+									<div class="error" id="password_error"><?php echo form_error('fulltext')?></div>	
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="form-group">
                                     <label>Hình đại diện</label>
                                     <input type="file" id="image_list" name="img" style="width: 100%" required>
+									<div class="error" id="password_error"><?php echo form_error('img')?></div>								</div>
                                 </div>
 								<div class="form-group">
 									<label>Trạng thái</label>
