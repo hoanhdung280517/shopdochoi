@@ -2,7 +2,6 @@
 	<div class="row wraper">
 		<div class="banner-product">
 		<div class="container">
-		
 		</div>
 	</div>
 		<div class="container">
